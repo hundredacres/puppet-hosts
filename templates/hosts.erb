@@ -1,0 +1,8 @@
+#==============================================================================#
+# This file managed by puppet
+# Module:           '<%= scope.to_hash['module_name'] %>'
+# Template source:  'MODULES<%= template_source.gsub(Regexp.new("^#{Puppet::Node::Environment.current[:modulepath].gsub(':','|')}"),"") %>'
+#------------------------------------------------------------------------------#
+127.0.0.1         localhost.localdomain localhost
+::1               localhost6.localdomain6 localhost6
+<%= @ipaddress %>   <%= @fqdn %> <%= @hostname %>
